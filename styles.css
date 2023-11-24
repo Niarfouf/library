@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 300px 1fr;
+    min-height: 100vh;
+  }
+  .library {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 25px;
+  }
+
+.book {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+
+}
+h1 {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+}
