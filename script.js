@@ -2,18 +2,21 @@
 const myLibrary = [];
 const library = document.querySelector(".library")
 const form = document.querySelector("#add-book")
-function Book(title, author, pages, read) {
+class Book{
+    constructor(title, author, pages, read){
     this.title = title
     this.author = author
     this.pages = pages
     this.read = read
-    this.status = () => {
+}
+    status() {
     if (this.read === "yes") {
         this.read = "no"
     } else {
         this.read = "yes"
-    }
-}}
+    }}
+}
+
 form.addEventListener("submit", event => {
     event.preventDefault()
     let book = new Book(this.title.value, this.author.value, this.pages.value, this.read.value)
